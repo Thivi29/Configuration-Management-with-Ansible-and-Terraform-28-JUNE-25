@@ -1,0 +1,11 @@
+---
+- hosts: sl
+  user: sluser
+  become: yes
+  connection: ssh
+  tasks:
+
+    - name: Installation HTTPD
+      action: yum name=httpd state=present
+    - name: Install Git
+      action: yum name=git state=present
