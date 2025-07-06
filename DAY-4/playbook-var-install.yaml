@@ -4,7 +4,7 @@
   vars:
     currstate: present
   tasks:
-    - name: Installation HTTPD
-      action: apt name=apache2 state='{{currstate}}'
+    - name: Install HTOP
+      action: apt name=htop state='{{currstate}}'
     - name: Install Git
       action: apt name=git state='{{currstate}}'
